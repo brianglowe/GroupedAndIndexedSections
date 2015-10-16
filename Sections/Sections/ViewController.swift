@@ -24,6 +24,8 @@ class ViewController: UIViewController, UITableViewDataSource {
         let path = NSBundle.mainBundle().pathForResource("sortednames", ofType: "plist")
         let namesDict = NSDictionary(contentsOfFile: path!)
         names = namesDict as! [String: [String]]
+        
+        // here we want to sort the names
         keys = namesDict!.allKeys as! [String]
     }
 
@@ -56,6 +58,10 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.textLabel?.text = nameSection[indexPath.row]
         
         return cell
+    }
+    
+    func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
+        return keys
     }
     
 
