@@ -14,6 +14,7 @@
 		D30148E11BD1AB9C005221B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D30148DF1BD1AB9C005221B8 /* LaunchScreen.storyboard */; };
 		D30148EC1BD1AB9C005221B8 /* SectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30148EB1BD1AB9C005221B8 /* SectionsTests.swift */; };
 		D30148F71BD1AB9C005221B8 /* SectionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30148F61BD1AB9C005221B8 /* SectionsUITests.swift */; };
+		D30149051BD1ADB9005221B8 /* sortednames.plist in Resources */ = {isa = PBXBuildFile; fileRef = D30149041BD1ADB9005221B8 /* sortednames.plist */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D30148F21BD1AB9C005221B8 /* SectionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SectionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30148F61BD1AB9C005221B8 /* SectionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsUITests.swift; sourceTree = "<group>"; };
 		D30148F81BD1AB9C005221B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D30149041BD1ADB9005221B8 /* sortednames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sortednames.plist; path = "../../../../../Development/Book Exercises/9781484204108/Examples/08 - Sections Data/sortednames.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				D30148DD1BD1AB9C005221B8 /* Assets.xcassets */,
 				D30148DF1BD1AB9C005221B8 /* LaunchScreen.storyboard */,
 				D30148E21BD1AB9C005221B8 /* Info.plist */,
+				D30149041BD1ADB9005221B8 /* sortednames.plist */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30149051BD1ADB9005221B8 /* sortednames.plist in Resources */,
 				D30148E11BD1AB9C005221B8 /* LaunchScreen.storyboard in Resources */,
 				D30148DE1BD1AB9C005221B8 /* Assets.xcassets in Resources */,
 				D30148DC1BD1AB9C005221B8 /* Main.storyboard in Resources */,
