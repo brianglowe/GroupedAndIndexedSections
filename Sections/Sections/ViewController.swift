@@ -10,12 +10,17 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
+    // properties of the ViewController
     let sectionsTableIdentifier = "SectionsTableIdentifier"
     var names: [String: [String]]!
     var keys: [String]!
-    
     @IBOutlet weak var tableView: UITableView!
 
+    // property to hold a reference to the UISearchViewController instance (this does most of the hard work for us)
+    var searchController: UISearchController!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
      
@@ -24,9 +29,22 @@ class ViewController: UIViewController, UITableViewDataSource {
         let path = NSBundle.mainBundle().pathForResource("sortednames", ofType: "plist")
         let namesDict = NSDictionary(contentsOfFile: path!)
         names = namesDict as! [String: [String]]
-        
         // here we want to sort the names
         keys = namesDict!.allKeys as! [String]
+        
+// this is the code that creates the search controller
+        let resultsController = SearchResultsController()
+        resultsController.names = names
+        resultsController.keys = keys
+        searchController = UISearchController(searchResultsController: resultsController)
+
+        let searchBar = searchController.searchBar
+        searchBar.scopeButtonTitles = ["All", "Short", "Long"]
+        searchBar.placeholder = "Enter search term"
+        searchBar.sizeToFit()
+        tableView.tableHeaderView = searchBar
+        searchController.searchResultsUpdater = resultsController
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,7 +70,6 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(sectionsTableIdentifier, forIndexPath: indexPath) 
-        
         let key = keys[indexPath.section]
         let nameSection = names[key]!
         cell.textLabel?.text = nameSection[indexPath.row]

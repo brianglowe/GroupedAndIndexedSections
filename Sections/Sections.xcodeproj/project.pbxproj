@@ -15,6 +15,7 @@
 		D30148EC1BD1AB9C005221B8 /* SectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30148EB1BD1AB9C005221B8 /* SectionsTests.swift */; };
 		D30148F71BD1AB9C005221B8 /* SectionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30148F61BD1AB9C005221B8 /* SectionsUITests.swift */; };
 		D30149051BD1ADB9005221B8 /* sortednames.plist in Resources */ = {isa = PBXBuildFile; fileRef = D30149041BD1ADB9005221B8 /* sortednames.plist */; settings = {ASSET_TAGS = (); }; };
+		D30149071BD1BB53005221B8 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30149061BD1BB53005221B8 /* SearchResultsController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D30148F61BD1AB9C005221B8 /* SectionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsUITests.swift; sourceTree = "<group>"; };
 		D30148F81BD1AB9C005221B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D30149041BD1ADB9005221B8 /* sortednames.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sortednames.plist; path = "../../../../../Development/Book Exercises/9781484204108/Examples/08 - Sections Data/sortednames.plist"; sourceTree = "<group>"; };
+		D30149061BD1BB53005221B8 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				D30148D61BD1AB9C005221B8 /* AppDelegate.swift */,
 				D30148D81BD1AB9C005221B8 /* ViewController.swift */,
+				D30149061BD1BB53005221B8 /* SearchResultsController.swift */,
 				D30148DA1BD1AB9C005221B8 /* Main.storyboard */,
 				D30148DD1BD1AB9C005221B8 /* Assets.xcassets */,
 				D30148DF1BD1AB9C005221B8 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30148D91BD1AB9C005221B8 /* ViewController.swift in Sources */,
+				D30149071BD1BB53005221B8 /* SearchResultsController.swift in Sources */,
 				D30148D71BD1AB9C005221B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
